@@ -1,0 +1,15 @@
+h1[id="hello"]{
+  color: red;
+}
+
+h1[id="hi"]{
+  color: blue;
+}
+
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+a[title="GOOGLE"] {
+  background-color: violet;
+}
