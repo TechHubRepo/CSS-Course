@@ -1,7 +1,0 @@
-/* The Name Selector for <p> Tag Element */
-div + p{
-    color: red;  
-    font-size: 40px;
-    font-weight: bold;
-}
- 
