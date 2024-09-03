@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    color: white;
+}
+
+.container{
+    width: 97%;
+    margin: 0 auto;
+    background: #FFF;
+    color: black;
+    padding: 10px;
+}
+
+.header{
+    padding: 20px 20px 20px 20px;
+    background: #125cb1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(186, 72, 72);
+}
+
+.header a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: xx-large;
+    color: white;
+}
+
+.menu{
+    background: rgb(0, 174, 139);
+    padding: 6px 0 6px 40px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:  Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    padding: 5px;
+
+}
+
+.menu a:hover{
+    background: rgb(255, 85, 0);
+    border-radius: 4px;
+}
+
+aside{
+    float: left;
+    width: 120px;
+    padding: 30px 0 0 40px;
+}
+
+h1{
+    margin: 0px;
+    color: blueviolet;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+aside a{
+    color: rgb(142, 17, 82);
+    font-size: 14px;
+    margin: 20px 0 5px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    margin: 0 0 0 180px;
+    padding: 35px 40px 30px 0px;
+    color: #444444;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-emphasis: justify;
+}
+
+.main a:hover{
+    color: rgb(20, 124, 107);
+
+}
+
+footer{
+    padding:  10px 10px 10px 10px;
+    color: white;
+    background: rgb(152, 11, 199);
+}
+
+footer a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#home-image img {
+    width: 50%;
+}
+
+/* About Page Style */
+#about-page #home-image img {
+    width: 200px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#about-page #profile-info{
+    float: right;
+    width: 20%;
+    margin: 5px;
+}
+
+#about-page .description{
+    clear: both;
+    
+}
