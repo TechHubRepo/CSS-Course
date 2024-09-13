@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: white;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #0097ce;
+    /* 1rem = 16px */
+    padding: 1rem 0;
+    /* Place the element on top of all the elements in document */
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    color: white;
+}
+
+.menu-icon{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+nav{
+    /* Inspect the browser window and understand the effects */
+    display: flex;    
+    /* Inspect the browser window and understand the effects */
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin: 0 10px;
+
+}
+
+.nav-list li a{
+   color: white;
+   text-decoration: none;
+   font-size: 1.1rem;
+   padding: 0.5rem;
+    
+}
+
+.nav-list li a:hover, .nav-list li a:active{
+    background-color: rgb(246, 66, 16);
+    border-radius: 5px;
+}
+
+.hero{
+    background: #0097ce;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.hero h1{
+    font-size: 2.5rem;      
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+}
+
+.content, .contact {
+    padding:  40px 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.content h1, .content h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 1.2rem;
+}
+
+.contact form{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form label{
+   display: block;
+   margin-bottom: 10px;
+   font-weight: bold;
+}
+
+.contact form input, .contact form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+
+ .contact form button{
+     display: block;
+     width: 100%;
+     padding: 10px;
+     background-color: #8200ce;
+     color: white;
+     border-radius: 5px;
+     border: none;
+     font-size: 1.1rem;
+    cursor: pointer;
+ }
+
+footer{
+    background: rgb(130, 84, 237);
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    padding: 10px 0;
+}
+
+
+.services-list{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
