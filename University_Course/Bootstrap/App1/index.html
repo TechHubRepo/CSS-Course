@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Client Registration</title>
+	<link rel="icon" href="./images/registration-icon-10.jpg">
+	<link rel="stylesheet" href="./css/home-page-style.css">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/bootstrap-grid.css">
+		<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="./css/bootstrap-reboot.css">
+		<link rel="stylesheet" href="./css/bootstrap-reboot.min.css"> -->
+</head>
+
+<body>
+
+	<div class="jumbotron">
+		<h1 class="display-4">Hello, Sign Up Here</h1>
+		<form>
+			<div class="form-group">
+				<label for="client_id">Choose Client ID</label>
+				<input type="text" class="form-control" id="client_id" aria-describedby="clinet_id"
+					placeholder="Enter Client ID (required)" required="required">
+			</div>
+			<div class="form-group">
+				<label for="client_secret">Client Secret (assumed as Password)</label>
+				<input type="text" class="form-control" id="client_secret" placeholder="Enter Password (required)" required="required">
+			</div>
+			<div class="form-group">
+				<label for="web_server_redirect_uri">Web Server Redirect URI</label>
+				<input type="text" class="form-control" id="web_server_redirect_uri" placeholder="Enter Redirect URI (required)"
+					required="required">
+			</div>
+			<div class="form-group">
+				<label for="resource_ids">Resource ID</label>
+				<input type="text" class="form-control" id="resource_ids" placeholder="Enter Resource id (optional)" value="">
+			</div>
+			<div class="form-group">
+				<label for="authorized_grant_types">Authorized Grant Types</label>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" id="passwordGrantCheckBok" name="scope" value="password" checked>
+					<label for="read">Password</label>
+
+					<input type="checkbox" id="refresh_tokenGrantCheckBok" name="scope" value="refresh_token" />
+					<label for="write">Refresh token</label>
+
+					<input type="checkbox" id="authorization_codeGrantCheckBok" name="scope"
+						value="authorization_code" />
+					<label for="update">Authorization code</label>
+
+					<input type="checkbox" id="implicitGrantCheckBok" name="scope" value="implicit" />
+					<label for="delete">Implicit</label>
+				</fieldset>
+			</div>
+			<div class="form-group">
+				<label for="scope">Scopes</label>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<input type="checkbox" id="readCheckBok" name="scope" value="READ" checked>
+					<label for="read">READ</label>
+
+					<input type="checkbox" id="writeCheckBok" name="scope" value="WRITE" />
+					<label for="write">WRITE</label>
+
+					<input type="checkbox" id="updateCheckBok" name="scope" value="UPDATE" />
+					<label for="update">UPDATE</label>
+
+					<input type="checkbox" id="deleteCheckBok" name="scope" value="DELETE" />
+					<label for="delete">DELETE</label>
+				</fieldset>
+			</div>
+			<div class="form-group">
+				<label for="authorities">Authorities</label>
+				<input type="text" class="form-control" id="authorities"
+					placeholder="Enter Authorities eg. CLIENT, USER etc" value="CLIENT">
+			</div>
+			<div class="form-group">
+				<label for="access_token_validity">Access Token Validity</label>
+				<input class="form-control" type="number" name="quantity" min="1" max="1000" value="300">
+			</div>
+			<div class="form-group">
+				<label for="refresh_token_validity">Refresh Token Validity</label>
+				<input class="form-control" type="number" name="quantity" min="1" max="1000" value="600">
+			</div>
+
+			<div class="form-group">
+				<label for="additional_information">Description (additional information)</label>
+				<input type="text" class="form-control" id="additional_information"
+					placeholder="Enter additional information as description (optional)" value="">
+			</div>
+			<div class="form-group">
+				<label for="autoapprove">Description (additional information)</label>
+				<input type="text" class="form-control" id="autoapprove" placeholder="Enter autoapprove (optional)"
+					value="">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<small id="message_for_Client" class="form-text text-muted">We'll never share your details with anyone
+			else</small>
+	</div>
+
+</body>
+<script src="./js/bootstrap.js"></script>
+<!-- <script src="./js/bootstrap.bundle.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/bootstrap.min.js"></script> -->
+
+</html>

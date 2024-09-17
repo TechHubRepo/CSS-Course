@@ -1,0 +1,17 @@
+****************************************************************************************************
+			Types of CSS
+****************************************************************************************************
+1). External style sheets are separate files full of CSS instructions (with the file extension .css). 
+When any web page includes an external stylesheet, its look and feel will be controlled by this 
+CSS file (unless you decide to override a style using one of these next two types). 
+This is how you change a whole website at once. And that's perfect if you want to keep up with 
+the latest fashion in web pages without rewriting every page!
+-----------------------------------------------------------------------------------
+2). Internal styles are placed at the top of each web page document, before any of the content is listed. 
+This is the next best thing to external, because they're easy to find, yet allow you to 'override' 
+an external style sheet -- for that special page that wants to be a nonconformist!
+-----------------------------------------------------------------------------------
+3). Inline styles are placed right where you need them, next to the text or graphic you wish to decorate. 
+You can insert inline styles anywhere in the middle of your HTML code, giving you real freedom to specify
+each web page element. On the other hand, this can make maintaining web pages a real chore!
+-----------------------------------------------------------------------------------

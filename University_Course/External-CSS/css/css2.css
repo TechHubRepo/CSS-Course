@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 13, 2018, 2:53:39 PM
+    Author     : Ram Niwash Mehla
+*/
+
+.clear
+{
+    clear:both;
+}
+
+#aId1
+{
+    background: #ffff33;     
+}
+#h1Id
+{
+    background: #ff0000;
+    border:  threedface;
+    border-radius: 10px;    
+}
+.header
+{
+    background: #ffff33;
+    border: #00ff33;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+    height:  70px; 
+    font-size: x-large;
+    font-family: fantasy ;
+}
+
+.footer
+{
+    background: pink;
+    border: #00ff33;
+    border-radius: 10px;   
+    text-align: center;
+    height:  70px;
+    font-family: fantasy ;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: fixed;  
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.leftPanel 
+{
+    margin: 5px;
+    background: #00cccc;
+    width: 20%;
+    height: 100px;
+    border: thick;
+    border-radius: 10px;
+    font-family: fantasy ;
+    padding: 20px;
+    float: left
+}
+.middlePanel
+{
+    margin: 5px;
+    background: #3333ff;
+    width: 48%;
+    height: 100px;
+    border: thick;
+    border-radius: 10px;
+    font-family: fantasy ;
+    padding: 20px;
+    color:  #ffffff;
+    float: left
+}
+.rightPanel
+{
+    margin: 5px;
+    background:    #00ff33;
+    width: 20%;    
+    height: 100px;
+    border: thick;
+    font-family: fantasy ;
+    border-radius: 10px;
+    float: right;   
+    padding: 20px;
+}

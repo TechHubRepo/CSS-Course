@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+
+body
+{
+    border: thin;
+    border-color: green;
+    background:#9393db;
+    border-radius: 10px;
+}
+
+a
+{
+    background: #99ff99;
+    border: thin;
+    border-radius:10px;        
+}
+
+h1,h2,h3,h3,h4,h5,h6
+{
+    background: yellow;
+    border-bottom-style: solid;
+    border-radius: 10px;
+}
+
+#mBox1
+{
+    background: #66ccff;
+    padding: 50px;
+    margin:50px;
+    border: solid;
+    border-radius: 10px;    
+    font-style: normal;
+    color: white;
+}
+
+.mBox2
+{
+    background:  blue; 
+    font-style: normal;
+    color: white; 
+    padding: 50px;
+    margin:50px;
+    border: solid;
+    border-radius: 10px; 
+}

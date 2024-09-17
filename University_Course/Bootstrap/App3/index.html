@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./image/dashboard.png">
+    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/github.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/dashboard-style.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body class="w3-light-grey">
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+        <span class="w3-bar-item w3-right">Logo</span>
+    </div>
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container w3-row">
+            <div class="w3-col s4">
+                <img src="./image/dashboard.png" class="w3-circle w3-margin-right" style="width:46px">
+            </div>
+            <div class="w3-col s8 w3-bar">
+                <span>Welcome, <strong>Ram Niwash</strong></span><br>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container">
+            <h5>Menus</h5>
+        </div>
+        <div class="w3-bar-block">
+            <a data-toggle="tab" href="#overviewTabPane" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
+            <a data-toggle="tab" href="#settingTabPane" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</a>
+        </div>
+    </nav>
+
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+        <div class="container">
+            <h1>Dashboard</h1>
+            <div class="tab-content">
+
+                <div id="overviewTabPane" class="tab-pane fade">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="settingTabPane" class="tab-pane fade">
+                    <h2>Profile Settings</h2>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#updateProfilePicTarget">Update Profile Picture</button>
+                    <div id="updateProfilePicTarget" class="collapse"><br/>
+                        <div class="container">
+                            <form>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose an Image file</label><br/>
+                                    <button type="submit" class="btn btn-primary">Upload</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <h2>OAuth 2.0 Settings</h2>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addClientForm">Add Client</button>
+                    <div id="addClientForm" class="collapse">
+                        <div class="container">
+                            <form>
+                                <div class="form-group">
+                                    <label for="clientIDField">Client ID</label>
+                                    <input type="text" class="form-control" id="clientID" aria-describedby="emailHelp" placeholder="Choose Client ID" name="clientID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="clientSecretField">Client Secret</label>
+                                    <input type="password" class="form-control" id="clientSecret" placeholder="Enter client sceret" name="clientSecret">
+                                </div>
+                                <div class="form-group">
+                                    <label>Authorization Types</label>
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" varia-label="Checkbox for following text input" value="authorization_code" name="authorizationTypes" />Authorization Code
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="implicit" name="authorizationTypes" />Implicit
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="password" name="authorizationTypes" />Password
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="client_credentials" name="authorizationTypes" />Client Credentials
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="device_code" name="authorizationTypes" />Device Code
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="refresh_token" name="authorizationTypes" />Refresh Token
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Scopes</label>
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="READ" name="scopes" />READ
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="WRITE" name="scopes" />WRITE
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="UPDATE" name="scopes" />UPDATE
+                                        </div>&nbsp;
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="DELETE" name="scopes" />DELETE
+                                        </div>&nbsp;
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Authoritiy</label>
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" value="CLIENT" name="authoritiy" checked/>CLIENT
+                                        </div>&nbsp;
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="example_typeahead">
+                                        <label>Resources</label>
+                                        <small id="info " class="form-text text-muted ">(Note : press Comma for multiple values)</small>
+                                        <div class="bs-docs">
+                                            <input type="text" value="" name="resources" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="example_typeahead">
+                                        <label>Redirect URIs </label>
+                                        <small id="info " class="form-text text-muted ">(Note : press Comma for multiple values)</small>
+                                        <div class="bs-docs">
+                                            <input type="text" value="" name="redirectURIs" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type=" submit " class="btn btn-primary ">Submit</button><br/>
+                                </div>
+                                <small id="info " class="form-text text-muted ">We'll never share your email with anyone else.</small>
+                            </form>
+                        </div>
+
+                    </div>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#clientViewContainer" onclick="Javascript:addRow()">Viw Clients</button>
+                    <div id="clientViewContainer" class="collapse">
+                        <table class="table table-dark" id="clientViewContainerTable" border="1" cellpadding="2">
+
+                            <tr>
+                                <td>Client ID</td>
+                                <td>Client Secret</td>
+                                <td>Authorization Types</td>
+                                <td>Scopes</td>
+                                <td>Authoritiy</td>
+                                <td>Resources</td>
+                                <td>Redirect URIs</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js "></script>
+    <script src="./js/bootstrap-tagsinput.min.js "></script>
+    <script src="./js/bootstrap-tagsinput-angular.min.js "></script>
+    <script src="./js/app_bs2.js "></script>
+    <script src="./js/app.js "></script>
+    <script type="text/javascript" src="./js/oauth2.0.js"></script>
+</body>
+
+</html>

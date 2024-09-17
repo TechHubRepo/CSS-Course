@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 13, 2018, 2:53:39 PM
+    Author     : Ram Niwash Mehla
+*/
+
+p
+{
+    border: thin;
+    border-radius: 5px;
+    background: #00cc33;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.header
+{
+    background:  #00cc00;
+    border:solid #F3C;	
+    border-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: x-large;  
+}
+
+.footer
+{
+    background: #00cc00;
+    border:solid #F3C;
+    text-align:  center;
+    font-size: x-large;
+    border-radius: 5px;    
+    margin-left: 5px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    position: fixed;  
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.leftPanel
+{
+    border:solid green;
+    background: #00cccc;
+    height: 200px;
+    width:250px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif;
+    float:left;
+}
+
+.midPanel
+{
+    border:solid green;
+    height: 200px;
+    background: #cc00cc;
+    color: white;
+    width:250px;
+    float:left;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif;
+   }
+
+.rightPanel
+{
+    border:solid green;
+    background: #00cccc;
+    height: 200px;
+    width:250px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif;
+    float:left;
+}
