@@ -27,6 +27,7 @@ header{
 }
 
 .menu-icon{
+    display: none;
     font-size: 25px;
     color: white;
     cursor: pointer;
@@ -143,7 +144,23 @@ footer{
     list-style: none;
 }
 
+@media (max-width: 700px){
+    .menu-icon{
+        display: block;
+    }
 
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
 
 
 
