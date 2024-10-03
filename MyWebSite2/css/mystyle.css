@@ -152,7 +152,7 @@ footer{
     .nav-list{
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #0097ce;
         width: 100%;
     }
 
@@ -160,6 +160,10 @@ footer{
         margin: 10px 0;
         text-align: center;
     }
+}
+
+.nav-list.show{
+    display: flex;
 }
 
 
